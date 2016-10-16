@@ -6,7 +6,7 @@ public class StringRotation {
         return str.contains(subStr);
     }
 
-    public boolean IsStringRotation(String str, String rotation){
+    public boolean isStringRotation(String str, String rotation){
         if ((null==str) || (null==rotation)){
             throw new IllegalArgumentException("parameters can not be null");
         }

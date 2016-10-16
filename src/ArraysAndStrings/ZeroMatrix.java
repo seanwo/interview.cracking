@@ -2,7 +2,7 @@ package ArraysAndStrings;
 
 public class ZeroMatrix {
 
-    private int[][] ZeroRows(int[][] matrix, boolean[] rowsToZero){
+    private int[][] zeroRows(int[][] matrix, boolean[] rowsToZero){
         for(int i=0; i<matrix.length; i++){
             if (rowsToZero[i]) {
                 for (int j = 0; j < matrix[0].length; j++) {
@@ -13,7 +13,7 @@ public class ZeroMatrix {
         return matrix;
     }
 
-    private int[][] ZeroCols(int[][] matrix, boolean[] colsToZero){
+    private int[][] zeroCols(int[][] matrix, boolean[] colsToZero){
         for(int i=0; i<matrix[0].length; i++){
             if (colsToZero[i]) {
                 for (int j = 0; j < matrix.length; j++) {
@@ -24,7 +24,7 @@ public class ZeroMatrix {
         return matrix;
     }
 
-    public int[][] ZeroMatrix(int[][] matrix){
+    public int[][] zeroMatrix(int[][] matrix){
         if (null == matrix){
             throw new IllegalArgumentException("matrix can not be null");
         }
@@ -42,8 +42,8 @@ public class ZeroMatrix {
             }
         }
 
-        matrix = ZeroRows(matrix, rowsToZero);
-        matrix = ZeroCols(matrix, colsToZero);
+        matrix = zeroRows(matrix, rowsToZero);
+        matrix = zeroCols(matrix, colsToZero);
 
         return matrix;
     }

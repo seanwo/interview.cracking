@@ -3,7 +3,7 @@ package ArraysAndStrings;
 import java.util.HashSet;
 
 public class IsUnique {
-    public boolean IsUnique(String str){
+    public boolean isUnique(String str){
         if (null == str){
             throw new IllegalArgumentException("input parameter may not be null");
         }

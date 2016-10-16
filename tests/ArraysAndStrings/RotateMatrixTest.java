@@ -22,7 +22,7 @@ public class RotateMatrixTest {
                 {15,11, 7, 3},
                 {16,12, 8, 4}};
 
-        int [][] actual = module.RotateMatrix(input);
+        int [][] actual = module.rotateMatrix(input);
 
         assertArrayEquals(expected[0], actual[0]);
         assertArrayEquals(expected[1], actual[1]);
@@ -42,7 +42,7 @@ public class RotateMatrixTest {
                 {8,5,2},
                 {9,6,3}};
 
-        int [][] actual = module.RotateMatrix(input);
+        int [][] actual = module.rotateMatrix(input);
 
         assertArrayEquals(expected[0], actual[0]);
         assertArrayEquals(expected[1], actual[1]);
@@ -59,7 +59,7 @@ public class RotateMatrixTest {
                 {3,1},
                 {4,2}};
 
-        int [][] actual = module.RotateMatrix(input);
+        int [][] actual = module.rotateMatrix(input);
 
         assertArrayEquals(expected[0], actual[0]);
         assertArrayEquals(expected[1], actual[1]);
@@ -71,7 +71,7 @@ public class RotateMatrixTest {
 
         int [][] expected = {{1}};
 
-        int [][] actual = module.RotateMatrix(input);
+        int [][] actual = module.rotateMatrix(input);
 
         assertArrayEquals(expected[0], actual[0]);
     }
@@ -82,13 +82,13 @@ public class RotateMatrixTest {
 
         int [][] expected = {{}};
 
-        int [][] actual = module.RotateMatrix(input);
+        int [][] actual = module.rotateMatrix(input);
 
         assertEquals(expected.length, actual.length);
     }
 
     @Test (expected = IllegalArgumentException.class)
     public void testRotateMatrixNull() throws Exception {
-        module.RotateMatrix(null);
+        module.rotateMatrix(null);
     }
 }

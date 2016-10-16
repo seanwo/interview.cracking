@@ -1,7 +1,7 @@
 package ArraysAndStrings;
 
 public class URLify {
-    public char[] URLify(char[] str, int len){
+    public char[] urlify(char[] str, int len){
         if (null==str) {
             throw new IllegalArgumentException("character array can not be null");
         }

@@ -22,7 +22,7 @@ public class ZeroMatrixTest {
                 { 9,10, 0,12},
                 {13,14, 0,16}};
 
-        int [][] actual = module.ZeroMatrix(input);
+        int [][] actual = module.zeroMatrix(input);
 
         assertArrayEquals(expected[0], actual[0]);
         assertArrayEquals(expected[1], actual[1]);
@@ -44,7 +44,7 @@ public class ZeroMatrixTest {
                 { 0, 0, 0, 0},
                 {13, 0, 0,16}};
 
-        int [][] actual = module.ZeroMatrix(input);
+        int [][] actual = module.zeroMatrix(input);
 
         assertArrayEquals(expected[0], actual[0]);
         assertArrayEquals(expected[1], actual[1]);
@@ -66,7 +66,7 @@ public class ZeroMatrixTest {
                 { 0,10,11,12},
                 { 0,14,15,16}};
 
-        int [][] actual = module.ZeroMatrix(input);
+        int [][] actual = module.zeroMatrix(input);
 
         assertArrayEquals(expected[0], actual[0]);
         assertArrayEquals(expected[1], actual[1]);
@@ -88,7 +88,7 @@ public class ZeroMatrixTest {
                 { 0, 0, 0, 0},
                 { 0, 0, 0, 0}};
 
-        int [][] actual = module.ZeroMatrix(input);
+        int [][] actual = module.zeroMatrix(input);
 
         assertArrayEquals(expected[0], actual[0]);
         assertArrayEquals(expected[1], actual[1]);
@@ -110,7 +110,7 @@ public class ZeroMatrixTest {
                 { 0, 0, 0, 0},
                 { 0, 0, 0, 0}};
 
-        int [][] actual = module.ZeroMatrix(input);
+        int [][] actual = module.zeroMatrix(input);
 
         assertArrayEquals(expected[0], actual[0]);
         assertArrayEquals(expected[1], actual[1]);
@@ -126,7 +126,7 @@ public class ZeroMatrixTest {
         int [][] expected = {
                 { 0, 0, 0, 0}};
 
-        int [][] actual = module.ZeroMatrix(input);
+        int [][] actual = module.zeroMatrix(input);
 
         assertArrayEquals(expected[0], actual[0]);
     }
@@ -145,7 +145,7 @@ public class ZeroMatrixTest {
                 { 0},
                 { 0}};
 
-        int [][] actual = module.ZeroMatrix(input);
+        int [][] actual = module.zeroMatrix(input);
 
         assertArrayEquals(expected[0], actual[0]);
         assertArrayEquals(expected[1], actual[1]);
@@ -159,7 +159,7 @@ public class ZeroMatrixTest {
 
         int [][] expected = {{1}};
 
-        int [][] actual = module.ZeroMatrix(input);
+        int [][] actual = module.zeroMatrix(input);
 
         assertArrayEquals(expected[0], actual[0]);
     }
@@ -170,7 +170,7 @@ public class ZeroMatrixTest {
 
         int [][] expected = {{0}};
 
-        int [][] actual = module.ZeroMatrix(input);
+        int [][] actual = module.zeroMatrix(input);
 
         assertArrayEquals(expected[0], actual[0]);
     }
@@ -181,12 +181,12 @@ public class ZeroMatrixTest {
 
         int [][] expected = {{}};
 
-        int [][] actual = module.ZeroMatrix(input);
+        int [][] actual = module.zeroMatrix(input);
 
         assertEquals(expected.length, actual.length);
     }
 
     @Test (expected = IllegalArgumentException.class)
     public void testRotateMatrixNull() throws Exception {
-        module.ZeroMatrix(null);
+        module.zeroMatrix(null);
     }}

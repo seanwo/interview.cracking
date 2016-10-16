@@ -1,7 +1,7 @@
 package ArraysAndStrings;
 
 public class StringCompression {
-    public String StringCompression(String str){
+    public String stringCompression(String str){
         if (null == str) {
             throw new IllegalArgumentException("String can not be null");
         }

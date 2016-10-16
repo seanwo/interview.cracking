@@ -1,7 +1,7 @@
 package ArraysAndStrings;
 
 public class RotateMatrix {
-    public int[][] RotateMatrix(int matrix[][]){
+    public int[][] rotateMatrix(int matrix[][]){
         if (null==matrix){
             throw new IllegalArgumentException("matrix cannot be null");
         }

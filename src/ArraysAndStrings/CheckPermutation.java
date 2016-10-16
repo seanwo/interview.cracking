@@ -3,7 +3,7 @@ package ArraysAndStrings;
 import java.util.HashMap;
 
 public class CheckPermutation {
-    public boolean IsPermutation(String str1, String str2){
+    public boolean isPermutation(String str1, String str2){
         if ((null == str1) || (null== str2)){
             throw new IllegalArgumentException("neither parameter may be null");
         }

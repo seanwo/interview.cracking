@@ -11,98 +11,98 @@ public class OneAwayTest {
     //Remove
     @Test
     public void testIsOneEditAwayRemoveOneBeginning() throws Exception {
-        assertEquals(true, module.IsOneEditAway("ale", "pale"));
+        assertEquals(true, module.isOneEditAway("ale", "pale"));
     }
 
     @Test
     public void testIsOneEditAwayRemoveOneBeginningSwap() throws Exception {
-        assertEquals(true, module.IsOneEditAway("pale", "ale"));
+        assertEquals(true, module.isOneEditAway("pale", "ale"));
     }
 
     @Test
     public void testIsOneEditAwayRemoveOneMiddle() throws Exception {
-        assertEquals(true, module.IsOneEditAway("pale", "ple"));
+        assertEquals(true, module.isOneEditAway("pale", "ple"));
     }
 
     @Test
     public void testIsOneEditAwayRemoveOneMiddleSwap() throws Exception {
-        assertEquals(true, module.IsOneEditAway("ple", "pale"));
+        assertEquals(true, module.isOneEditAway("ple", "pale"));
     }
 
     @Test
     public void testIsOneEditAwayRemoveOneEnd() throws Exception {
-        assertEquals(true, module.IsOneEditAway("pales", "pale"));
+        assertEquals(true, module.isOneEditAway("pales", "pale"));
     }
 
     @Test
     public void testIsOneEditAwayRemoveOneEndSwap() throws Exception {
-        assertEquals(true, module.IsOneEditAway("pale", "pales"));
+        assertEquals(true, module.isOneEditAway("pale", "pales"));
     }
 
     @Test
     public void testIsOneEditAwayRemoveTwo() throws Exception {
-        assertEquals(false, module.IsOneEditAway("pale", "pa"));
+        assertEquals(false, module.isOneEditAway("pale", "pa"));
     }
 
     @Test
     public void testIsOneEditAwayRemoveTwoSwap() throws Exception {
-        assertEquals(false, module.IsOneEditAway("pa", "pale"));
+        assertEquals(false, module.isOneEditAway("pa", "pale"));
     }
 
     //Replace
 
     @Test
     public void testIsOneEditAwayReplaceOneBeginning() throws Exception {
-        assertEquals(true, module.IsOneEditAway("pale", "bale"));
+        assertEquals(true, module.isOneEditAway("pale", "bale"));
     }
 
     @Test
     public void testIsOneEditAwayReplaceOneBeginningSwap() throws Exception {
-        assertEquals(true, module.IsOneEditAway("bale", "pale"));
+        assertEquals(true, module.isOneEditAway("bale", "pale"));
     }
 
     @Test
     public void testIsOneEditAwayReplaceOneMiddle() throws Exception {
-        assertEquals(true, module.IsOneEditAway("pale", "pele"));
+        assertEquals(true, module.isOneEditAway("pale", "pele"));
     }
 
     @Test
     public void testIsOneEditAwayReplaceOneMiddleSwap() throws Exception {
-        assertEquals(true, module.IsOneEditAway("pele", "pale"));
+        assertEquals(true, module.isOneEditAway("pele", "pale"));
     }
 
     @Test
     public void testIsOneEditAwayReplaceOneEnd() throws Exception {
-        assertEquals(true, module.IsOneEditAway("pale", "pala"));
+        assertEquals(true, module.isOneEditAway("pale", "pala"));
     }
 
     @Test
     public void testIsOneEditAwayReplaceOneEndSwap() throws Exception {
-        assertEquals(true, module.IsOneEditAway("pala", "pale"));
+        assertEquals(true, module.isOneEditAway("pala", "pale"));
     }
 
     @Test
     public void testIsOneEditAwayReplaceTwo() throws Exception {
-        assertEquals(false, module.IsOneEditAway("pale", "bake"));
+        assertEquals(false, module.isOneEditAway("pale", "bake"));
     }
 
     @Test
     public void testIsOneEditAwayReplaceTwoSwap() throws Exception {
-        assertEquals(false, module.IsOneEditAway("bake", "pale"));
+        assertEquals(false, module.isOneEditAway("bake", "pale"));
     }
 
     @Test (expected = IllegalArgumentException.class)
     public void testIsOneEditAwayOneNull() throws Exception {
-        module.IsOneEditAway(null, "pale");
+        module.isOneEditAway(null, "pale");
     }
 
     @Test (expected = IllegalArgumentException.class)
     public void testIsOneEditAwayOtherNull() throws Exception {
-        module.IsOneEditAway("pale", null);
+        module.isOneEditAway("pale", null);
     }
 
     @Test (expected = IllegalArgumentException.class)
     public void testIsOneEditAwayTwoNull() throws Exception {
-        module.IsOneEditAway(null, null);
+        module.isOneEditAway(null, null);
     }
 }

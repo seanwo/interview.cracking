@@ -9,31 +9,31 @@ public class IsUniqueTest {
 
     @Test
     public void testIsUniqueHappy() throws Exception {
-        assertEquals(true, module.IsUnique("abc"));
+        assertEquals(true, module.isUnique("abc"));
     }
 
     @Test
     public void testIsUniqueSingle() throws Exception {
-        assertEquals(true, module.IsUnique("a"));
+        assertEquals(true, module.isUnique("a"));
     }
 
     @Test
     public void testIsUniqueEmpty() throws Exception {
-        assertEquals(true, module.IsUnique(""));
+        assertEquals(true, module.isUnique(""));
     }
 
     @Test
     public void testIsUniqueSimpleDuplicate() throws Exception {
-        assertEquals(false, module.IsUnique("aa"));
+        assertEquals(false, module.isUnique("aa"));
     }
 
     @Test
     public void testIsUniqueDuplicate() throws Exception {
-        assertEquals(false, module.IsUnique("abcad"));
+        assertEquals(false, module.isUnique("abcad"));
     }
 
     @Test (expected = IllegalArgumentException.class)
     public void testIsUniqueNull() throws Exception {
-        assertEquals(true, module.IsUnique(null));
+        assertEquals(true, module.isUnique(null));
     }
 }

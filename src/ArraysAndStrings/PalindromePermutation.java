@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 public class PalindromePermutation {
-    public boolean IsPalindromePermutation(String str){
+    public boolean isPalindromePermutation(String str){
         if (null==str){
             throw new IllegalArgumentException("parameter can not be null");
         }

@@ -10,46 +10,46 @@ public class PalindromePermutationTest {
 
     @Test
     public void testIsPalindromePermutationHappy() throws Exception {
-        assertEquals(true, module.IsPalindromePermutation("tactcoa"));
+        assertEquals(true, module.isPalindromePermutation("tactcoa"));
     }
 
     @Test
     public void testIsPalindromePermutationMixedCase() throws Exception {
-        assertEquals(true, module.IsPalindromePermutation("TactCoa"));
+        assertEquals(true, module.isPalindromePermutation("TactCoa"));
     }
 
     @Test
     public void testIsPalindromePermutationWithSpace() throws Exception {
-        assertEquals(true, module.IsPalindromePermutation("Tact Coa"));
+        assertEquals(true, module.isPalindromePermutation("Tact Coa"));
     }
 
     @Test
     public void testIsPalindromePermutationSingleLetter() throws Exception {
-        assertEquals(true, module.IsPalindromePermutation("a"));
+        assertEquals(true, module.isPalindromePermutation("a"));
     }
 
     @Test
     public void testIsPalindromePermutationEmpty() throws Exception {
-        assertEquals(true, module.IsPalindromePermutation(""));
+        assertEquals(true, module.isPalindromePermutation(""));
     }
 
     @Test
     public void testIsPalindromePermutationNotPalindromePerm() throws Exception {
-        assertEquals(false, module.IsPalindromePermutation("abaa"));
+        assertEquals(false, module.isPalindromePermutation("abaa"));
     }
 
     @Test
     public void testIsPalindromePermutationNotPalindromePermAllUnique() throws Exception {
-        assertEquals(false, module.IsPalindromePermutation("abd"));
+        assertEquals(false, module.isPalindromePermutation("abd"));
     }
 
     @Test (expected = IllegalArgumentException.class)
     public void testIsPalindromePermutationNull() throws Exception {
-        module.IsPalindromePermutation(null);
+        module.isPalindromePermutation(null);
     }
 
     @Test (expected = IllegalArgumentException.class)
     public void testIsPalindromePermutationIllegalChar() throws Exception {
-        module.IsPalindromePermutation("ab!a");
+        module.isPalindromePermutation("ab!a");
     }
 }
