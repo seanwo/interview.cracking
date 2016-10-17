@@ -7,7 +7,7 @@ public class RemoveDups {
         if (null == list) {
             throw new IllegalArgumentException("list can not be null");
         }
-        HashSet<Integer> set = new HashSet<>();
+        HashSet<Object> set = new HashSet<>();
         LinkedList.Node pPrev = null;
         LinkedList.Node pList = list.head;
         if (null==pList) return list;

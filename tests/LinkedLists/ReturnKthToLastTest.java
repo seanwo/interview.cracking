@@ -10,7 +10,7 @@ public class ReturnKthToLastTest {
 
     @Test
     public void testKthToLastHappy() throws Exception {
-        LinkedList input = new LinkedList();
+        LinkedList<Integer> input = new LinkedList<>();
         input.appendToTail(1);
         input.appendToTail(2);
         input.appendToTail(3);
@@ -24,7 +24,7 @@ public class ReturnKthToLastTest {
 
     @Test
     public void testKthToLastLastElement() throws Exception {
-        LinkedList input = new LinkedList();
+        LinkedList<Integer> input = new LinkedList<>();
         input.appendToTail(1);
         input.appendToTail(2);
         input.appendToTail(3);
@@ -35,7 +35,7 @@ public class ReturnKthToLastTest {
 
     @Test
     public void testKthToLastFirstElement() throws Exception {
-        LinkedList input = new LinkedList();
+        LinkedList<Integer> input = new LinkedList<>();
         input.appendToTail(1);
         input.appendToTail(2);
         input.appendToTail(3);
@@ -46,7 +46,7 @@ public class ReturnKthToLastTest {
 
     @Test
     public void testKthToLastOneElementList() throws Exception {
-        LinkedList input = new LinkedList();
+        LinkedList<Integer> input = new LinkedList<>();
         input.appendToTail(1);
 
         assertEquals(1, module.kthToLast(input, 0));
@@ -54,7 +54,7 @@ public class ReturnKthToLastTest {
 
     @Test (expected = IllegalArgumentException.class)
     public void testKthToLastExceedsList() throws Exception {
-        LinkedList input = new LinkedList();
+        LinkedList<Integer> input = new LinkedList<>();
         input.appendToTail(1);
         input.appendToTail(2);
         input.appendToTail(3);

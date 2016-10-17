@@ -1,7 +1,7 @@
 package LinkedLists;
 
 public class ReturnKthToLast {
-    public int kthToLast(LinkedList list, int k){
+    public Object kthToLast(LinkedList list, int k){
         if (null==list){
             throw new IllegalArgumentException("linked list can not be null");
         }

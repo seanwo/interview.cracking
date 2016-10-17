@@ -8,14 +8,14 @@ public class RemoveDupsTest extends LinkedListHelper {
 
     @Test
     public void testRemoveDupsHappy() throws Exception {
-        LinkedList input = new LinkedList();
+        LinkedList<Integer> input = new LinkedList<>();
         input.appendToTail(1);
         input.appendToTail(2);
         input.appendToTail(3);
         input.appendToTail(1);
         input.appendToTail(4);
 
-        LinkedList expected = new LinkedList();
+        LinkedList<Integer> expected = new LinkedList<>();
         expected.appendToTail(1);
         expected.appendToTail(2);
         expected.appendToTail(3);
@@ -26,12 +26,12 @@ public class RemoveDupsTest extends LinkedListHelper {
 
     @Test
     public void testRemoveDupsNoDups() throws Exception {
-        LinkedList input = new LinkedList();
+        LinkedList<Integer> input = new LinkedList<>();
         input.appendToTail(1);
         input.appendToTail(2);
         input.appendToTail(3);
 
-        LinkedList expected = new LinkedList();
+        LinkedList<Integer> expected = new LinkedList<>();
         expected.appendToTail(1);
         expected.appendToTail(2);
         expected.appendToTail(3);
@@ -41,11 +41,11 @@ public class RemoveDupsTest extends LinkedListHelper {
 
     @Test
     public void testRemoveDupsTwoSequentialDups() throws Exception {
-        LinkedList input = new LinkedList();
+        LinkedList<Integer> input = new LinkedList<>();
         input.appendToTail(1);
         input.appendToTail(1);
 
-        LinkedList expected = new LinkedList();
+        LinkedList<Integer> expected = new LinkedList<>();
         expected.appendToTail(1);
 
         assertListEqual(expected, module.removeDups(input));
@@ -53,12 +53,12 @@ public class RemoveDupsTest extends LinkedListHelper {
 
     @Test
     public void testRemoveDupsDupBeginning() throws Exception {
-        LinkedList input = new LinkedList();
+        LinkedList<Integer> input = new LinkedList<>();
         input.appendToTail(1);
         input.appendToTail(1);
         input.appendToTail(2);
 
-        LinkedList expected = new LinkedList();
+        LinkedList<Integer> expected = new LinkedList<>();
         expected.appendToTail(1);
         expected.appendToTail(2);
 
@@ -67,12 +67,12 @@ public class RemoveDupsTest extends LinkedListHelper {
 
     @Test
     public void testRemoveDupsDupEnd() throws Exception {
-        LinkedList input = new LinkedList();
+        LinkedList<Integer> input = new LinkedList<>();
         input.appendToTail(1);
         input.appendToTail(2);
         input.appendToTail(2);
 
-        LinkedList expected = new LinkedList();
+        LinkedList<Integer> expected = new LinkedList<>();
         expected.appendToTail(1);
         expected.appendToTail(2);
 
@@ -81,13 +81,13 @@ public class RemoveDupsTest extends LinkedListHelper {
 
     @Test
     public void testRemoveDupsDupMiddle() throws Exception {
-        LinkedList input = new LinkedList();
+        LinkedList<Integer> input = new LinkedList<>();
         input.appendToTail(1);
         input.appendToTail(2);
         input.appendToTail(2);
         input.appendToTail(3);
 
-        LinkedList expected = new LinkedList();
+        LinkedList<Integer> expected = new LinkedList<>();
         expected.appendToTail(1);
         expected.appendToTail(2);
         expected.appendToTail(3);
@@ -97,13 +97,13 @@ public class RemoveDupsTest extends LinkedListHelper {
 
     @Test
     public void testRemoveDupsAllDups() throws Exception {
-        LinkedList input = new LinkedList();
+        LinkedList<Integer> input = new LinkedList<>();
         input.appendToTail(1);
         input.appendToTail(1);
         input.appendToTail(1);
         input.appendToTail(1);
 
-        LinkedList expected = new LinkedList();
+        LinkedList<Integer> expected = new LinkedList<>();
         expected.appendToTail(1);
 
         assertListEqual(expected, module.removeDups(input));
@@ -111,13 +111,13 @@ public class RemoveDupsTest extends LinkedListHelper {
 
     @Test
     public void testRemoveDupsTwoSeriesOfDups() throws Exception {
-        LinkedList input = new LinkedList();
+        LinkedList<Integer> input = new LinkedList<>();
         input.appendToTail(1);
         input.appendToTail(1);
         input.appendToTail(2);
         input.appendToTail(2);
 
-        LinkedList expected = new LinkedList();
+        LinkedList<Integer> expected = new LinkedList<>();
         expected.appendToTail(1);
         expected.appendToTail(2);
 
@@ -126,10 +126,10 @@ public class RemoveDupsTest extends LinkedListHelper {
 
     @Test
     public void testRemoveDupsOneElement() throws Exception {
-        LinkedList input = new LinkedList();
+        LinkedList<Integer> input = new LinkedList<>();
         input.appendToTail(1);
 
-        LinkedList expected = new LinkedList();
+        LinkedList<Integer> expected = new LinkedList<>();
         expected.appendToTail(1);
 
         assertListEqual(expected, module.removeDups(input));
@@ -137,8 +137,8 @@ public class RemoveDupsTest extends LinkedListHelper {
 
     @Test
     public void testRemoveDupsNoElements() throws Exception {
-        LinkedList input = new LinkedList();
-        LinkedList expected = new LinkedList();
+        LinkedList<Integer> input = new LinkedList<>();
+        LinkedList<Integer> expected = new LinkedList<>();
 
         assertListEqual(expected, module.removeDups(input));
     }

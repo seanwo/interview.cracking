@@ -1,28 +1,29 @@
 package LinkedLists;
 
-public class LinkedList {
+public class LinkedList<T> {
 
     Node head = null;
 
      class Node {
         Node next = null;
-        int data;
+        T data;
 
-        public Node(int d){
+        public Node(T d){
             data=d;
         }
     }
 
-    public void appendToTail(int d){
+    public Node appendToTail(T d){
         Node end = new Node(d);
         Node n = head;
         if (null==n){
             head=end;
-            return;
+            return end;
         }
         while (n.next != null){
             n = n.next;
         }
         n.next=end;
+        return end;
     }
 }
