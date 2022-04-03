@@ -1,8 +1,5 @@
 package LinkedLists;
 
-import sun.awt.image.ImageWatched;
-import sun.dc.pr.PRError;
-
 public class RemoveDupsNoBuffer {
     public LinkedList removeDups(LinkedList list){
         if (null == list){

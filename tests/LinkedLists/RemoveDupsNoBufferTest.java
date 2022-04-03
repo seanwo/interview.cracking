@@ -2,8 +2,6 @@ package LinkedLists;
 
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class RemoveDupsNoBufferTest extends LinkedListHelper {
 
     RemoveDupsNoBuffer module = new RemoveDupsNoBuffer();
